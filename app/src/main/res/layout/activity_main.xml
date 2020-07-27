@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/constraintlayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout1">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/stirringminds"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageview"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="20dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/cardview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="18dp"
+                android:id="@+id/linearlayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN IN"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/limegreen"
+                    android:textSize="25dp"
+                    android:id="@+id/signin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   USERNAME"
+                    android:textSize="12dp"
+                    android:layout_marginTop="50dp"
+                    android:drawableLeft="@drawable/person"
+                    android:id="@+id/username"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/username_edittext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   PASSWORD"
+                android:textSize="12dp"
+                android:layout_marginTop="25dp"
+                android:drawableLeft="@drawable/lock"
+                android:id="@+id/password"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="@color/blue"
+                    android:inputType="textPassword"
+                    android:id="@+id/password_edittext"/>
+
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:background="@drawable/button_background"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/submit_btn"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/linearlayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New user ?"
+                    android:id="@+id/newuser"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign Up"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/signup"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Developed by Atharva Kulkarni"
+             android:layout_gravity="center"
+             android:textSize="15dp"
+             android:textStyle="italic"
+             android:layout_marginTop="30dp"
+             android:id="@+id/developed"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
